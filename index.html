@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №7</title>
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .owl-carousel .item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    
+    #owl-slider.owl-theme .owl-nav {
+      display: none;
+    }
+    #owl-slider.owl-theme .owl-dots {
+      display: none;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="loader" class="loader" aria-hidden="false">
+    <div class="loader-inner">
+      <img src="images/logo.png" alt="logo" class="loader-logo">
+      <div class="spinner" role="status" aria-label="loading"></div>
+      <div class="loader-text">Завантаження…</div>
+    </div>
+  </div>
+
+  <header>
+    <h1>Кафедра САПР</h1>
+    <nav>
+      <a href="#lab">Лабораторні</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+
+  <main id="lab">
+    <h2>Лабораторна робота №7</h2>
+    <p>Створення простої сторінки</p>
+
+    <h3 style="margin-top: 30px;">Елемент 1: Datepicker</h3>
+    <input type="text" id="datepicker" readonly placeholder="Обрати дату...">
+
+    <h3 style="margin-top: 30px;">Елемент 2: Accordion</h3>
+    <div id="accordion">
+      <h3>Секція 1: Сир Фета</h3>
+      <div>
+        <p>Фета – це найвідоміший грецький сир. Справжня фета робиться з овечого (або суміші овечого та козячого) молока. Свою солоність і смак він отримує завдяки тому, що витримується у розсолі (солоній воді).</p>
+      </div>
+      <h3>Секція 2: Помідори</h3>
+      <div>
+        <p>Хоча ми звикли використовувати помідори як овочі (в салатах чи супах), насправді це фрукт, а точніше – ягода. Коли помідори вперше привезли до Європи, вони були не червоними, а жовтими. Саме тому в італійській мові помідор називається "pomo d'oro", що означає "золоте яблуко".</p>
+      </div>
+      <h3>Секція 3: Оливки</h3>
+      <div>
+        <p>Зелені та чорні оливки – це не різні сорти. Це той самий плід, просто зібраний на різних етапах зрілості. Зелені оливки – це "молоді" (недозрілі) плоди, а чорні – це ті, що повністю дозріли на сонці. Оливкові дерева живуть дуже довго і можуть плодоносити сотнями років.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 30px;">Елемент 3: Tooltip</h3>
+    <p>Наведіть курсор на
+      <strong title="Рецепт грецького салату: 1. Наріжте помідори, огірки та червону цибулю. 2. Додайте оливки Каламата. 3. Зверху покладіть цілий шматок або кубики сиру Фета. 4. Полийте оливковою олією, посипте сухим орегано та додайте трохи лимонного соку або винного оцту.">
+        це слово
+      </strong>,
+      щоб побачити рецепт салату.
+    </p>
+
+    
+<h3 style="margin-top: 30px;">Елемент 4: Owl Carousel </h3>
+    <div class="owl-carousel owl-theme" id="owl-slider-default">
+        <div class="item"><img src="images/photo_1.png" alt="Фото 1"></div>
+        <div class="item"><img src="images/photo_2.png" alt="Фото 2"></div>
+        <div class="item"><img src="images/photo_3.png" alt="Фото 3"></div>
+        <div class="item"><img src="images/photo_4.jpg" alt="Фото 4"></div>
+        <div class="item"><img src="images/photo_5.png" alt="Фото 5"></div>
+        <div class="item"><img src="images/photo_6.png" alt="Фото 6"></div>
+        <div class="item"><img src="images/photo_7.png" alt="Фото 7"></div>
+    </div>
+
+    
+<h3 style="margin-top: 30px;">Елемент 5:Простий Slider</h3>
+    <div class="owl-carousel owl-theme" id="owl-slider">
+        <div class="item"><img src="images/photo_1.png" alt="Фото 1"></div>
+        <div class="item"><img src="images/photo_2.png" alt="Фото 2"></div>
+        <div class="item"><img src="images/photo_3.png" alt="Фото 3"></div>
+        <div class="item"><img src="images/photo_4.jpg" alt="Фото 4"></div>
+        <div class="item"><img src="images/photo_5.png" alt="Фото 5"></div>
+        <div class="item"><img src="images/photo_6.png" alt="Фото 6"></div>
+        <div class="item"><img src="images/photo_7.png" alt="Фото 7"></div>
+    </div>
+    
+    <div id="slider" style="margin: 20px auto 0 auto; max-width: 90%;"></div>
+
+
+  </main>
+
+  <footer id="contacts">
+    <div class="footer-content">
+      <img src="images/footer_logo.png" alt="Кафедра САПР - Computer Aided Systems" class="footer-logo">
+      <div class="social-icons">
+        <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
+      </div>
+    </div>
+    <p>© 2025 Кафедра САПР. Усі права захищені.</p>
+    <p>Корисні посилання:</p>
+    <ul>
+      <li>
+        <a href="https://cad.lpnu.ua" target="_blank">Сайт кафедри САПР</a> |
+        <a href="https://lpnu.ua/ikni" target="_blank">Сайт ІКНІ</a> |
+        <a href="https://lpnu.ua" target="_blank">Сайт Львівської політехніки</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
